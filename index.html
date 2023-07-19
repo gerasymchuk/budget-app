@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sora"
+    />
+    <title>My dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>My dashboard</h2>
+        <div class="top-navbar-icons">
+          <img src="notification-linear.svg" alt="Notification" />
+          <img src="settings-linear.svg" alt="Settings" />
+          <img src="user-linear.svg" alt="User" />
+        </div>
+      </header>
+      <div class="subheader">
+        <h3>Overview</h3>
+        <div class="filters">
+          <div class="tags">
+            <a href="#" class="tag tag1">#lidl</a>
+            <a href="#" class="tag tag2">#apple</a>
+            <a href="#" class="tag tag3">#starbucks</a>
+            <a href="#" class="tag tag4">#mcdonalds</a>
+            <a href="#" class="tag tag5">#walmart</a>
+          </div>
+          <button
+            class="filter-dropdown-button"
+            type="button"
+            onclick="alert('Hello World!')"
+          >
+            <span class="filter-text"
+              >Categories <img src="small-arrow-filled.svg"
+            /></span>
+          </button>
+          <button
+            class="filter-dropdown-button"
+            type="button"
+            onclick="alert('Hello World!')"
+          >
+            <span class="filter-text"
+              >1-31 January, 2023 <img src="small-arrow-filled.svg"
+            /></span>
+            <img class="filter-calendar-icon" src="calendar-linear.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="overview-topActivity-categories">
+        <div class="overview-topActivity">
+          <div class="overview">
+            <div class="overview-card">
+              <span class="overview-amount-text">$238.5</span>
+              <div class="overview-labels">
+                <span class="overview-label-text">Balance</span>
+                <span class="overview-label-text text-red">- 2.4%</span>
+              </div>
+            </div>
+            <div class="overview-card">
+              <span class="overview-amount-text">$132.5</span>
+              <div class="overview-labels">
+                <span class="overview-label-text">Expences</span>
+                <span class="overview-label-text text-red">- 1.5%</span>
+              </div>
+            </div>
+            <div class="overview-card">
+              <span class="overview-amount-text">$1400</span>
+              <div class="overview-labels">
+                <span class="overview-label-text">Income</span>
+                <span class="overview-label-text text-green">+ 5.7%</span>
+              </div>
+            </div>
+            <div class="overview-card">
+              <span class="overview-amount-text">$14500</span>
+              <div class="overview-labels">
+                <span class="overview-label-text">Savings</span>
+                <span class="overview-label-text text-green">+ 10.2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="topActivity">
+            <h3>Top activity</h3>
+          </div>
+        </div>
+        <div class="categories">
+          <h3>Categories</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

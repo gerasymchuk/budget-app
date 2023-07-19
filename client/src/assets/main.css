@@ -1,35 +1,75 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Sora', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+
+    --c-background-white: #F5F5F5;
+    --c-primary-white: #FCFBFC;
+    --c-primary-light-blue: #BFD8D4;
+    --c-primary-lake: #5ACCBA;
+    --c-primary-light-lake: #EAF8F5;
+    --c-primary-dark-lake: #244E48;
+    --c-primary-dark-blue: #171B33;
+    --c-primary-blue: #353E74;
+    --c-primary-tangerine: #FC5D1E;
+
+    --c-grey-light: #CACCD9;
+    --c-grey-medium: #70758C;
+    --c-grey-medium-transparent: rgba(151, 156, 178, 0.15);
+    --c-grey-dark: #35394C;
+
+    --c-text: var(--c-primary-dark-blue);
+    --c-heading-h1: var(--c-primary-lake);
+    --c-heading-h2: var(--c-primary-blue);
+    --c-heading-h3: var(--c-primary-dark-blue);
+    --c-text-tonal-button: #244E48;
+
+}
+
+body {
+  background-color: var(--c-background-white);
+  margin: 0 auto;
+}
 
 #app {
-  max-width: 1280px;
+  max-width: 1440px;
+  min-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+  color: var(--c-text);
+  
+}
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+h1 {
+  color: var(--c-heading-h1);
+  font-size: 2rem;
+  line-height: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+h2 {
+  color: var(--c-heading-h2);
+  font-size: 2rem;
+  line-height: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+h3 {
+  color: var(--c-heading-h3);
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
 }
